@@ -1,0 +1,57 @@
+.radix-site-nav {
+  color: white;
+  background-color: #5f6a72;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.radix-site-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.radix-site-nav a:hover {
+  color: #cc0033;
+}
+
+.radix-site-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.radix-site-footer {
+}
+
+@media print {
+  .radix-site-nav {
+    display: none;
+  }
+}
+
+
+/*My additions*/
+
+.nav-dropdown {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-dropdown a:hover {
+  color: #cc0033;
+}
+
+.nav-dropdown-content {
+  color: #5f6a72;
+  background-color: #5f6a72;
+}
+
+.nav-dropdown-content a:hover {
+  color: #cc0033;
+  background-color: #5f6a72;
+}
+
+
+/*ru_colors <- c('RUred' =  '#cc0033',*/
+               /*'RUgrey' = '#5f6a72',*/
+               /*'RUblack' = '#000000')*/
+

@@ -3,6 +3,7 @@ title: "RAP Group"
 description: |
   Rutgers Applied Phonetics Group
 base_url: https://rap-group.github.io
+google_analytics: "UA-49437230-1"
 favicon: images/favicon.gif
 collections:
   posts:
@@ -14,16 +15,23 @@ collections:
     subscribe: _subscribe.html
 output_dir: "."
 navbar:
-  logo: images/ru_white.png
-  right:
+  logo: images/ru.png
+  left:
     - text: "Lab"
       href: lab.html
     - text: "Contributors"
       href: contributors.html
-    - text: "Research"
-      href: research.html
-    - text: "Posts"
-      href: posts.html
+    - text: "News"
+      menu:
+      - text: "Research"
+        href: research.html
+      - text: "Posts"
+        href: posts.html
+  right:
+    - icon: fa fa-github
+      href: https://github.com/RAP-group
     - icon: fa fa-rss
       href: index.xml
-output: radix::radix_article
+output: 
+  radix::radix_article:
+    css: styles.css
