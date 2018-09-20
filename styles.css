@@ -21,6 +21,14 @@
 }
 
 .radix-site-footer {
+  background-color: white;
+  padding: 0;
+  color: black;
+}
+
+.radix-site-footer a {
+  color: black;
+  text-decoration: none;
 }
 
 @media print {

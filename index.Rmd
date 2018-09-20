@@ -5,9 +5,8 @@ description: |
 site: radix::radix_website
 ---
 
-More information coming soon. 
+::: l-body
+![](images/rap-group.png){width=50%}
+:::
 
-<br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br>
+</br></br></br>
