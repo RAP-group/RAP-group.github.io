@@ -1,7 +1,10 @@
 ---
-title: "The Sharpe Ratio"
+title: "Example post"
 description: |
   A short description of the post.
+categories:
+  - portfolios
+  - dygraphs
 author:
   - name: casillas
 date: 09-19-2018
@@ -14,7 +17,10 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Radix is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Radix at <https://rstudio.github.io/radix>.
-
+```{r, layout="l-body-outset", preview=TRUE, fig.retina=2}
+library(ggplot2)
+ggplot(mtcars, aes(x = wt, y =  mpg)) + 
+  geom_point() + 
+  geom_smooth(method = 'lm', se = F) + 
+  theme_minimal()
+```

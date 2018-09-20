@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://rap-group.github.io/about.html</loc>
-    <lastmod>2018-09-19T21:28:46-04:00</lastmod>
-  </url>
-  <url>
-    <loc>https://rap-group.github.io/blog.html</loc>
-    <lastmod>2018-09-19T21:22:51-04:00</lastmod>
+    <loc>https://rap-group.github.io/contributors.html</loc>
+    <lastmod>2018-09-19T22:08:04-04:00</lastmod>
   </url>
   <url>
     <loc>https://rap-group.github.io/</loc>
-    <lastmod>2018-09-19T21:27:59-04:00</lastmod>
+    <lastmod>2018-09-19T22:08:36-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://rap-group.github.io/lab.html</loc>
+    <lastmod>2018-09-19T22:09:19-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://rap-group.github.io/posts.html</loc>
+    <lastmod>2018-09-19T21:22:51-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://rap-group.github.io/research.html</loc>
+    <lastmod>2018-09-19T22:14:37-04:00</lastmod>
   </url>
   <url>
     <loc>https://rap-group.github.io/posts/2018-09-19-the-sharpe-ratio/</loc>
-    <lastmod>2018-09-19T21:19:04-04:00</lastmod>
+    <lastmod>2018-09-19T22:27:18-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://rap-group.github.io/articles/2018-09-19-radix-article-test/</loc>
+    <lastmod>2018-09-19T22:35:26-04:00</lastmod>
   </url>
 </urlset>

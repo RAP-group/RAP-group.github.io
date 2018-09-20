@@ -1,8 +1,10 @@
 ---
-title: "Welcome"
+title: "Research"
 description: |
   Rutgers Applied Phonetics Group 
 site: radix::radix_website
+listing: articles
 ---
 
-More information coming soon. 
+
+

@@ -1,0 +1,36 @@
+---
+title: "Radix article test"
+description: |
+  A new article created using the Radix format.
+author:
+  - name: Nora Jones 
+    url: https://example.com/norajones
+    affiliation: Spacely Sprockets
+    affiliation_url: https://example.com/spacelysprokets
+categories:
+  - radix
+  - testing
+date: 09-19-2018
+output:
+  radix::radix_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Radix is a publication format for scientific and technical writing, native to the web. 
+
+Learn more about using Radix at <https://rstudio.github.io/radix>.
+
+
+
+```{r, layout="l-body-outset", preview=TRUE, fig.retina=2}
+library(ggplot2)
+ggplot(mtcars, aes(x = drat, y =  mpg)) + 
+  geom_point() + 
+  geom_smooth(method = 'lm', se = F) + 
+  theme_classic()
+```
+
