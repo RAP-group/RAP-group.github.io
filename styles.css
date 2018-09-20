@@ -17,6 +17,7 @@
 .radix-site-header {
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 2px;
 }
 
 .radix-site-footer {
@@ -51,7 +52,16 @@
 }
 
 
+.logo {
+  display: inline-block;
+  width: 120px;
+  height: 46px;
+  background-image:url(./images/ru.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+}
+
 /*ru_colors <- c('RUred' =  '#cc0033',*/
                /*'RUgrey' = '#5f6a72',*/
                /*'RUblack' = '#000000')*/
-

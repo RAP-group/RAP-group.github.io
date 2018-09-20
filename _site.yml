@@ -15,7 +15,7 @@ collections:
     subscribe: _subscribe.html
 output_dir: "."
 navbar:
-  logo: images/ru.png
+  logo: images/blank.png
   left:
     - text: "Lab"
       href: lab.html
