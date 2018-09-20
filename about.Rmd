@@ -1,0 +1,11 @@
+---
+title: "About"
+description: |
+  Rutgers Applied Phonetics Group
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+More information coming soon. 
