@@ -6,7 +6,8 @@ site: radix::radix_website
 ---
 
 ::: l-body
-![](images/rap-group.png){width=50%}
+![](https://raw.githubusercontent.com/jvcasillas/hex_stickers/master/stickers/rap-group.png){width=50%}
 :::
+
 
 </br></br></br>
