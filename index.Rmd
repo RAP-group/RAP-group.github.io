@@ -5,9 +5,10 @@ description: |
 site: radix::radix_website
 ---
 
-::: l-body
-![](https://raw.githubusercontent.com/jvcasillas/hex_stickers/master/stickers/rap-group.png){width=50%}
-:::
-
+<div align='center'>
+  <img width="160px" src="./images/blank.png"/>
+  <img width="350px" src="https://raw.githubusercontent.com/jvcasillas/hex_stickers/master/stickers/rap-group.png"/>
+  <img width="160px" src="./images/blank.png"/>
+</div>
 
 </br></br></br>
