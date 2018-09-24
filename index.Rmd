@@ -6,9 +6,9 @@ site: radix::radix_website
 ---
 
 <div align='center'>
-  <img width="180px" src="./images/blank.png"/>
+  <img width="200px" src="./images/blank.png"/>
   <img width="300px" src="https://raw.githubusercontent.com/jvcasillas/hex_stickers/master/stickers/rap-group.png"/>
-  <img width="180px" src="./images/blank.png"/>
+  <img width="200px" src="./images/blank.png"/>
 </div>
 
 </br></br></br>
