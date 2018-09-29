@@ -4,7 +4,7 @@ description: |
   Rutgers Applied Phonetics Group
 base_url: https://rap-group.github.io
 google_analytics: "UA-49437230-1"
-favicon: images/favicon.gif
+favicon: images/favicon.png
 collections:
   posts:
     disqus: rap-group.github.io
