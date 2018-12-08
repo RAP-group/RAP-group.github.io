@@ -1,0 +1,21 @@
+---
+title: "People"
+description: |
+  Rutgers Applied Phonetics Group 
+site: radix::radix_website
+---
+
+## Current members
+
+| Name            | Role | Email                       | Website            |
+| :-------------- | :--- | :-------------------------- | :----------------- |
+| Joseph Casillas | PI   | joseph.casillas@rutgers.edu | www.jvcasillas.com |
+
+MORE COMING SOON!
+
+## PhD Students
+
+## Former members
+
+## Collaborators
+

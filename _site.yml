@@ -19,8 +19,8 @@ navbar:
   left:
     - text: "Lab"
       href: lab.html
-    - text: "Contributors"
-      href: contributors.html
+    - text: "People"
+      href: people.html
     - text: "News"
       menu:
       - text: "Research"

@@ -5,10 +5,12 @@ description: |
 site: radix::radix_website
 ---
 
-<div align='center'>
-  <img width="200px" src="./images/blank.png"/>
+
+The Rutgers Applied Phonetics Group is run by Joseph Casillas and is based out 
+of the Department of Spanish and Portuguese at Rutgers University, New 
+Brunswick. 
+
+<div class='zoom' align='center'>
   <img width="300px" src="https://raw.githubusercontent.com/jvcasillas/hex_stickers/master/stickers/rap-group.png"/>
-  <img width="200px" src="./images/blank.png"/>
 </div>
 
-</br></br></br>

@@ -5,7 +5,63 @@ description: |
 site: radix::radix_website
 ---
 
-More information coming soon. 
+# Research
 
-</br></br></br>
-</br></br></br>
+The RAP group conducts research focused on the phonetics and phonology of 
+bilingualism. Specifically, we explore the production, perception and spoken 
+word recognition of bilinguals with varying linguistic experience. 
+
+# Equipment
+
+Our lab is equiped with professional equipment used to conduct behavioral
+experiments related to speech perception and speech articulation. Furthermore, 
+we use open-source software for stimuli presentation (Python), data management 
+(git), and statistical analysis (R). Here is a list of some of the equipment 
+we use:
+
+- Whisper room 6084 E sound booth
+- Fostex DC-R302 digital recorder
+- Sound Devices MM1 Pre-amp
+- Sure SM10A head-mounted microphones
+- Eye tribe eye-tracking devices
+- Macbook Pro field laptops
+- Cedrus response button boxes
+
+Coming soon...
+
+- Mac Mini computers
+- Tobii eye-trackers
+- Additional field microphones
+- Aloka ultrasound imager
+
+# Location
+
+The lab is located on the 4th floor of 1 Spring Street in downtown New 
+Brunswick. 
+
+```{r}
+library(leaflet)
+spring_street <- leaflet() %>% 
+  addTiles() %>%
+  setView(-74.445068, 40.495180, zoom = 17) %>%
+  addPopups(-74.445068, 40.495180, 
+            popup = 'This is where the <b>RAP Group</b> is located.')
+spring_street
+```
+
+# Join us
+
+If you are interested in working in the lab in some capacity or studying 
+bilingualism/second language acquisition at Rutgers, please contact 
+Professor Casillas. If you are interested in participating in an experiment 
+[click here](mailto:ru.rap.group@gmail.com). 
+
+
+<aside>
+[`r fontawesome::fa("envelope-open", height = 20, fill = 'grey')`](mailto:joseph.casillas@rutgers.edu)  
+
+[Participate in an experiment](mailto:ru.rap.group@gmail.com)
+</aside>
+
+
+<!-- https://sites.rutgers.edu/language-studies/undergraduates/ -->
