@@ -1,0 +1,36 @@
+---
+title: |
+  Free hearing screenings at 1 Spring street
+description: |
+  RAP-group accommodates RU Speech and Hearing Club to host free 
+  hearing screening
+categories:
+  - spring street
+  - sound booth
+author:
+  - name: casillas
+date: 03-07-2019
+output:
+  radix::radix_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The RU Speech and Hearing Club hosted a free Hearing Screening in the RAP-group sound booth on 1 Spring street. 
+
+The purpose of the event was to allow aspiring audiologists and speech 
+pathologists in the Speech and Hearing Club hands-on experience 
+administering hearing tests using audiometers with professional 
+audiologist, Dr. Karen Kushla.
+
+The Speech and Hearing Club members worked in pairs, with one student operating the audiometer while the other student noted the results. Dr. Kushla supervised the screening and interpreted the results for the participants.
+
+In a typical hearing screening a series of tones are presented through headphones one ear at a time and the hearer raises their hand if/when they hear the tone. First, a 500 Hz pure tone at 40 dB HL. If the hearer perceives the tone then the intensity is reduced to 25 dB HL, and then to 20 dB HL. Next, the frequency is raised to 1000 Hz and the process is repeated. 
+
+It was a great experience for some future audiologists. 
+
+![hearing-screening](./hearing-screenings_files/img/hearing-screenings.png)
+

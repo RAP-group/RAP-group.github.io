@@ -12,15 +12,16 @@
       <link>https://rap-group.github.io</link>
     </image>
     <generator>Radix</generator>
-    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Mar 2019 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Example post</title>
+      <title>Free hearing screenings at 1 Spring street
+</title>
       <dc:creator>casillas</dc:creator>
-      <link>https://rap-group.github.io/posts/2018-09-19-the-sharpe-ratio</link>
-      <description>A short description of the post.</description>
-      <guid>https://rap-group.github.io/posts/2018-09-19-the-sharpe-ratio</guid>
-      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
-      <media:content url="https://rap-group.github.io/posts/2018-09-19-the-sharpe-ratio/the-sharpe-ratio_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1152" height="768"/>
+      <link>https://rap-group.github.io/posts/2019-03-07-hearing-screenings</link>
+      <description>RAP-group accommodates RU Speech and Hearing Club to host free 
+hearing screening</description>
+      <guid>https://rap-group.github.io/posts/2019-03-07-hearing-screenings</guid>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

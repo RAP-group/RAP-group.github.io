@@ -1,22 +1,20 @@
 [
   {
-    "path": "posts/2018-09-19-the-sharpe-ratio/",
-    "title": "Example post",
-    "description": "A short description of the post.",
+    "path": "posts/2019-03-07-hearing-screenings/",
+    "title": "Free hearing screenings at 1 Spring street\n",
+    "description": "RAP-group accommodates RU Speech and Hearing Club to host free \nhearing screening",
     "author": [
       {
         "name": "casillas",
         "url": {}
       }
     ],
-    "date": "2018-09-19",
+    "date": "2019-03-07",
     "categories": [
-      "portfolios",
-      "dygraphs"
+      "spring-street",
+      "sound-booth"
     ],
-    "preview": "posts/2018-09-19-the-sharpe-ratio/the-sharpe-ratio_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2018-09-19T22:27:18-04:00",
-    "preview_width": 1152,
-    "preview_height": 768
+    "preview": {},
+    "last_modified": "2019-03-07T23:02:29-05:00"
   }
 ]
