@@ -7,15 +7,22 @@ site: radix::radix_website
 
 ## Current members
 
-| Name            | Role | Email                       | Website            |
-| :-------------- | :--- | :-------------------------- | :----------------- |
-| Joseph Casillas | PI   | joseph.casillas@rutgers.edu | www.jvcasillas.com |
+| Name             | Role                    | Email                        | Website            |
+| :--------------- | :---------------------- | :--------------------------- | :----------------- |
+| Joseph Casillas  | PI                      | joseph.casillas@rutgers.edu  | www.jvcasillas.com |
+| Laura Fernández  | PhD student             | lf402@spanport.rutgers.edu   | https://laurafdeza.github.io |
+| Nicole Rodríguez | PhD student             | nicole.rodriguez@rutgers.edu | https://nmrodriguez.github.io |
+| Avery Field      | Undergraduate assistant | amf299@scarletmail.rutgers.edu | -- |
+| Jack Fastenau    | Undergraduate assistant | jmf426@scarletmail.rutgers.edu | -- |
 
-MORE COMING SOON!
 
 ## PhD Students
+
+- Laura Fernández
+- Nicole Rodríguez
 
 ## Former members
 
 ## Collaborators
 
+- Dr. Miquel Simonet

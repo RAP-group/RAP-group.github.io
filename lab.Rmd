@@ -8,8 +8,9 @@ site: radix::radix_website
 # Research
 
 The RAP group conducts research focused on the phonetics and phonology of 
-bilingualism. Specifically, we explore the production, perception and spoken 
-word recognition of bilinguals with varying linguistic experience. 
+second language acquisition and bilingualism. 
+Specifically, we explore the production, perception and spoken word 
+recognition of bilinguals with varying linguistic experience.
 
 # Equipment
 
