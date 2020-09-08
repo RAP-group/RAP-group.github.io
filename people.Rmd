@@ -7,13 +7,13 @@ site: radix::radix_website
 
 ## Current members
 
-| Name             | Role                    | Email                        | Website            |
-| :--------------- | :---------------------- | :--------------------------- | :----------------- |
-| Joseph Casillas  | PI                      | joseph.casillas@rutgers.edu  | www.jvcasillas.com |
-| Laura Fernández  | PhD student             | lf402@spanport.rutgers.edu   | https://laurafdeza.github.io |
-| Nicole Rodríguez | PhD student             | nicole.rodriguez@rutgers.edu | https://nmrodriguez.github.io |
-| Avery Field      | Undergraduate assistant | amf299@scarletmail.rutgers.edu | -- |
-| Jack Fastenau    | Undergraduate assistant | jmf426@scarletmail.rutgers.edu | -- |
+| Name                   | Role        | Email                        | Website            |
+| :--------------------- | :---------- | :--------------------------- | :----------------- |
+| Joseph Casillas        | PI          | joseph.casillas@rutgers.edu  | www.jvcasillas.com |
+| Laura Fernández        | PhD student | lf402@spanport.rutgers.edu   | https://laurafdeza.github.io |
+| Nicole Rodríguez       | PhD student | nicole.rodriguez@rutgers.edu | https://nmrodriguez.github.io |
+| Juan José Garrido Pozu | PhD student |                              |                   |
+| Kyle Parrish           | PhD student |                              |                   |
 
 
 ## PhD Students
@@ -23,6 +23,9 @@ site: radix::radix_website
 
 ## Former members
 
+- Avery Field (Aresty, Montclair State)
+- Jack Fastenau (Lab assistant)
+
 ## Collaborators
 
-- Dr. Miquel Simonet
+- Dr. Miquel Simonet (University of Arizona)
