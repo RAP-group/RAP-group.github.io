@@ -5,10 +5,11 @@ description: |
   RAP-group accommodates RU Speech and Hearing Club to host free 
   hearing screening
 categories:
-  - spring street
+  - RAP group
   - sound booth
+  - Speech and hearing
 author:
-  - name: casillas
+  - name: Joseph V. Casillas
 date: 03-07-2019
 output:
   radix::radix_article:

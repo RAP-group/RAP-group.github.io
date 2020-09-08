@@ -12,11 +12,19 @@
       <link>https://rap-group.github.io</link>
     </image>
     <generator>Radix</generator>
-    <lastBuildDate>Thu, 07 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Automatic references in RMarkdown</title>
+      <dc:creator>Joseph V. Casillas</dc:creator>
+      <link>https://rap-group.github.io/posts/2019-10-11-references_in_rmarkdown</link>
+      <description>A quick tutorial on how to cite references in RMarkdown.</description>
+      <guid>https://rap-group.github.io/posts/2019-10-11-references_in_rmarkdown</guid>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Free hearing screenings at 1 Spring street
 </title>
-      <dc:creator>casillas</dc:creator>
+      <dc:creator>Joseph V. Casillas</dc:creator>
       <link>https://rap-group.github.io/posts/2019-03-07-hearing-screenings</link>
       <description>RAP-group accommodates RU Speech and Hearing Club to host free 
 hearing screening</description>

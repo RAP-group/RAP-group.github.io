@@ -1,20 +1,40 @@
 [
   {
+    "path": "posts/2019-10-11-references_in_rmarkdown/",
+    "title": "Automatic references in RMarkdown",
+    "description": "A quick tutorial on how to cite references in RMarkdown.",
+    "author": [
+      {
+        "name": "Joseph V. Casillas",
+        "url": {}
+      }
+    ],
+    "date": "2019-10-11",
+    "categories": [
+      "RAP group",
+      "Writing",
+      "Workflow"
+    ],
+    "preview": {},
+    "last_modified": "2019-10-11T16:06:14-04:00"
+  },
+  {
     "path": "posts/2019-03-07-hearing-screenings/",
     "title": "Free hearing screenings at 1 Spring street\n",
     "description": "RAP-group accommodates RU Speech and Hearing Club to host free \nhearing screening",
     "author": [
       {
-        "name": "casillas",
+        "name": "Joseph V. Casillas",
         "url": {}
       }
     ],
     "date": "2019-03-07",
     "categories": [
-      "spring-street",
-      "sound-booth"
+      "RAP group",
+      "sound booth",
+      "Speech and hearing"
     ],
     "preview": {},
-    "last_modified": "2019-03-07T23:02:29-05:00"
+    "last_modified": "2019-10-11T16:06:03-04:00"
   }
 ]

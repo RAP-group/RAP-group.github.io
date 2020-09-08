@@ -1,0 +1,46 @@
+---
+title: "Automatic references in RMarkdown"
+description: |
+  A quick tutorial on how to cite references in RMarkdown.
+categories:
+  - RAP group
+  - Writing
+  - Workflow
+author:
+  - name: Joseph V. Casillas
+date: 10-11-2019
+output:
+  radix::radix_article:
+    self_contained: false
+draft: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+Using RMarkdown to generate reproducible documents has a lot of advantages. 
+One of them is the ability to import `.bib` files to cite sources and 
+automagically generate a bibliography. 
+In this post we will go over a simple workflow for importing a bib file, 
+citing some articles, and generating a references section in APA format. 
+Specifically, we will cover two ways to do this. 
+The first method is more general and probably works best if your desired 
+output is HTML. 
+The second method relies on the `papaja` package.<sup>1</sup> 
+It is probably a bit easier and ideal when your desired output is PDF or word. 
+
+<aside>
+<sup>1</sup>Click [here]() for a `papaja` tutorial. 
+</aside>
+
+## HTML output
+
+HTML here
+
+## PDF or word output
+
+Here. 
+
+

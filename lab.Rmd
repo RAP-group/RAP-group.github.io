@@ -14,11 +14,11 @@ recognition of bilinguals with varying linguistic experience.
 
 # Equipment
 
-Our lab is equiped with professional equipment used to conduct behavioral
-experiments related to speech perception and speech articulation. Furthermore, 
-we use open-source software for stimuli presentation (Python), data management 
-(git), and statistical analysis (R). Here is a list of some of the equipment 
-we use:
+Our lab is houses professional equipment used to conduct behavioral
+experiments related to speech perception and speech articulation. 
+Furthermore, we use open-source software for stimuli presentation (Python), 
+data management (git), and statistical analysis (R). 
+Here is a list of some of the equipment we use:
 
 - Whisper room 6084 E sound booth
 - Fostex DC-R302 digital recorder
@@ -54,7 +54,8 @@ spring_street
 
 If you are interested in working in the lab in some capacity or studying 
 bilingualism/second language acquisition at Rutgers, please contact 
-Professor Casillas. If you are interested in participating in an experiment 
+Professor Casillas. 
+If you are interested in participating in an experiment 
 [click here](mailto:ru.rap.group@gmail.com). 
 
 
