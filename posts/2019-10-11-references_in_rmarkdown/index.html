@@ -52,15 +52,18 @@
 <meta name="citation_publication_date" content="2019/10/11"/>
 <meta name="citation_author" content="Joseph V. Casillas"/>
 <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=Second language speech learning: Theory, findings, and problems;citation_publication_date=1995;citation_volume=92;citation_author=James E Flege"/>
+  <meta name="citation_reference" content="citation_title=Linguistic experience alters phonetic perception in infants by 6 months of age;citation_publication_date=1992;citation_volume=255;citation_author=PK Kuhl;citation_author=KA Williams;citation_author=F Lacerda;citation_author=KN Stevens;citation_author=B Lindblom"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","draft","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Automatic references in RMarkdown"]},{"type":"character","attributes":{},"value":["A quick tutorial on how to cite references in RMarkdown."]},{"type":"character","attributes":{},"value":["RAP group","Writing","Workflow"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Joseph V. Casillas"]}]}]},{"type":"character","attributes":{},"value":["10-11-2019"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["radix::radix_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://rap-group.github.io/posts/2019-10-11-references_in_rmarkdown/"]},{"type":"character","attributes":{},"value":["https://rap-group.github.io/posts/2019-10-11-references_in_rmarkdown/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","draft","bibliography","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Automatic references in RMarkdown"]},{"type":"character","attributes":{},"value":["A quick tutorial on how to cite references in RMarkdown."]},{"type":"character","attributes":{},"value":["RAP group","Writing","Workflow"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Joseph V. Casillas"]}]}]},{"type":"character","attributes":{},"value":["10-11-2019"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["radix::radix_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["./references_in_rmarkdown_files/sample_refs.bib"]},{"type":"character","attributes":{},"value":["https://rap-group.github.io/posts/2019-10-11-references_in_rmarkdown/"]},{"type":"character","attributes":{},"value":["https://rap-group.github.io/posts/2019-10-11-references_in_rmarkdown/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["references_in_rmarkdown_files/bowser-1.9.3/bowser.min.js","references_in_rmarkdown_files/distill-2.2.21/template.v2.js","references_in_rmarkdown_files/jquery-1.11.3/jquery.min.js","references_in_rmarkdown_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["references_in_rmarkdown_files/apa.csl","references_in_rmarkdown_files/bowser-1.9.3/bowser.min.js","references_in_rmarkdown_files/distill-2.2.21/template.v2.js","references_in_rmarkdown_files/jquery-1.11.3/jquery.min.js","references_in_rmarkdown_files/rmd_citation_example.zip","references_in_rmarkdown_files/sample_refs.bib","references_in_rmarkdown_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 
@@ -1459,14 +1462,66 @@ News
 </div>
 
 <div class="d-article">
-<p>Using RMarkdown to generate reproducible documents has a lot of advantages. One of them is the ability to import <code>.bib</code> files to cite sources and automagically generate a bibliography. In this post we will go over a simple workflow for importing a bib file, citing some articles, and generating a references section in APA format. Specifically, we will cover two ways to do this. The first method is more general and probably works best if your desired output is HTML. The second method relies on the <code>papaja</code> package.<sup>1</sup> It is probably a bit easier and ideal when your desired output is PDF or word.</p>
-<aside>
-<sup>1</sup>Click <a href="">here</a> for a <code>papaja</code> tutorial.
-</aside>
-<h2 id="html-output">HTML output</h2>
-<p>HTML here</p>
-<h2 id="pdf-or-word-output">PDF or word output</h2>
-<p>Here.</p>
+<h2 id="overview">Overview</h2>
+<p>Using RMarkdown to generate reproducible documents has a lot of advantages. One of them is the ability to import <code>.bib</code> files to cite sources and automagically generate a bibliography. In this post we will go over a simple workflow for importing a bib file, citing some articles, and generating a references section.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>First, we’ll need a <code>.bib</code> file to import. For this post we will use a simple example that can be downloaded <a href="https://rap-group.github.io/posts/2019-10-11-references_in_rmarkdown/references_in_rmarkdown_files/rmd_citation_example.zip">here</a>. This file should live in the same directory as your <code>.Rmd</code> file (or you can specify a custom path in the YAML frontmatter). The file in this case is <code>sample_refs.bib</code> and contains two references: <code>flege1995</code> and <code>kuhl1992</code>.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<p>If we open the file (it’s just a normal text file with a .bib ending) we will see LaTeX/bibtex syntax:</p>
+<pre><code>
+@article{flege1995,
+  title={Second language speech learning: Theory, findings, and problems},
+  author={Flege, James E},
+  journal={Speech perception and linguistic experience: Issues in cross-language research},
+  volume={92},
+  pages={233--277},
+  year={1995}
+}
+
+@article {kuhl1992,
+  author = {Kuhl, PK and Williams, KA and Lacerda, F and Stevens, KN and Lindblom, B},
+  title = {Linguistic experience alters phonetic perception in infants by 6 months of age},
+  volume = {255},
+  number = {5044},
+  pages = {606--608},
+  year = {1992},
+  journal = {Science}
+}</code></pre>
+<p>The advantage of using a <code>.bib</code> file for citing references is that all we have to do is supple the important information, i.e., author, year, etc., and Rmarkdown will tell <code>pandoc-citeproc</code> how to format them. In our case we will use the default, but you can use any format you want (even custom formats). For example, you can download an APA Citations Style Language file (apa.csl) from <a href="https://github.com/philipbelesky/Markdown-Citation-Style-Languages/blob/master/apa.csl">here</a>. If you do this make sure to put this file in the same directory as your <code>.Rmd</code> file (or specify a custom path). Once you have done that you need to update the YAML frontmatter of your document so that it looks something like this:</p>
+<pre class="yaml"><code>
+---
+title: &quot;A title&quot;
+output: 
+  pdf_document
+  html_document
+bibliography: sample_refs.bib
+---</code></pre>
+<p>And if you are going to use a specific CSL you add another line after <code>bibliography: sample_refs.bib</code> specifying the path. Like this:</p>
+<pre><code>
+csl: apa.csl</code></pre>
+<p>Now we are ready to cite some sources. We can use standard markdown syntax for this (see here for more details). For example, we can cite the Flege article as a parenthetical reference using <code>[@flege1995]</code>:</p>
+<p>The Speech Learning Model (Flege, 1995)<span class="citation" data-cites="flege1995">(Flege <a href="#ref-flege1995" role="doc-biblioref">1995</a>)</span> is pretty cool.</p>
+<p>To render the above citation I typed this:</p>
+<pre><code>
+The Speech Learning Model [@flege1995] is pretty cool.</code></pre>
+<p>Note that the formatting of this blog uses numbered citations (see the <code>References</code> section at the bottom). Now I can also use in-text citations by typing <code>@kuhl1992</code> (without the brackets):</p>
+<p>Kuhl (1992)<span class="citation" data-cites="kuhl1992">Kuhl et al. (<a href="#ref-kuhl1992" role="doc-biblioref">1992</a>)</span> has a great TED talk.</p>
+<pre><code>
+@kuhl1992 has a great TED talk. </code></pre>
+<p>At the end of your document you need to add a section header called <code>References</code>:</p>
+<pre class="md"><code>
+# References</code></pre>
+<p>and then your bibliography will be generated automatically. You can download a working example to test this and use as a template <a href="https://rap-group.github.io/posts/2019-10-11-references_in_rmarkdown/references_in_rmarkdown_files/rmd_citation_example.zip">here</a>.</p>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-flege1995">
+<p>Flege, James E. 1995. “Second Language Speech Learning: Theory, Findings, and Problems.” <em>Speech Perception and Linguistic Experience: Issues in Cross-Language Research</em> 92: 233–77.</p>
+</div>
+<div id="ref-kuhl1992">
+<p>Kuhl, PK, KA Williams, F Lacerda, KN Stevens, and B Lindblom. 1992. “Linguistic Experience Alters Phonetic Perception in Infants by 6 Months of Age.” <em>Science</em> 255 (5044): 606–8.</p>
+</div>
+</div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">
@@ -1522,6 +1577,26 @@ var disqus_config = function () {
   year = {2019}
 }</pre>
 </div>
+<script id="distill-bibliography" type="text/bibtex">
+@article{flege1995,
+  title={Second language speech learning: Theory, findings, and problems},
+  author={Flege, James E},
+  journal={Speech perception and linguistic experience: Issues in cross-language research},
+  volume={92},
+  pages={233--277},
+  year={1995}
+}
+
+@article {kuhl1992,
+  author = {Kuhl, PK and Williams, KA and Lacerda, F and Stevens, KN and Lindblom, B},
+  title = {Linguistic experience alters phonetic perception in infants by 6 months of age},
+  volume = {255},
+  number = {5044},
+  pages = {606--608},
+  year = {1992},
+  journal = {Science}
+}
+</script>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="radix-site-nav radix-site-footer">
