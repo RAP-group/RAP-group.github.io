@@ -24,7 +24,7 @@ site: radix::radix_website
 ## Former members
 
 - Avery Field (Aresty, Montclair State)
-- Jack Fastenau (Lab assistant)
+- Jack Fastenau (Lab assistant, New Jersey Medical School)
 
 ## Collaborators
 
