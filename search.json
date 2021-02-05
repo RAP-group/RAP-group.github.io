@@ -6,7 +6,7 @@
       "description": "Rutgers Applied Phonetics Group \n",
       "author": [],
       "contents": "\nThe Rutgers Applied Phonetics Group is run by Joseph Casillas and is based out of the Department of Spanish and Portuguese at Rutgers University, New Brunswick.\n\n\n\n\n\n\n",
-      "last_modified": "2021-02-04T22:25:37-05:00"
+      "last_modified": "2021-02-04T22:55:10-05:00"
     },
     {
       "path": "lab.html",
@@ -14,7 +14,7 @@
       "description": "Rutgers Applied Phonetics Group \n",
       "author": [],
       "contents": "\nResearch\nThe RAP group conducts research focused on the phonetics and phonology of second language acquisition and bilingualism. Specifically, we explore the production, perception and spoken word recognition of bilinguals with varying linguistic experience.\nEquipment\nOur lab is houses professional equipment used to conduct behavioral experiments related to speech perception and speech articulation. Furthermore, we use open-source software for stimuli presentation (Python), data management (git), and statistical analysis (R). Here is a list of some of the equipment we use:\nWhisper room 6084 E sound booth\nFostex DC-R302 digital recorder\nSound Devices MM1 Pre-amp\nSure SM10A head-mounted microphones\nEye tribe eye-tracking devices\nMacbook Pro field laptops\nCedrus response button boxes\nComing soon…\nMac Mini computers\nTobii eye-trackers\nAdditional field microphones\nAloka ultrasound imager\nLocation\nThe lab is located on the 4th floor of 1 Spring Street in downtown New Brunswick.\n\n\n{\"x\":{\"options\":{\"crs\":{\"crsClass\":\"L.CRS.EPSG3857\",\"code\":null,\"proj4def\":null,\"projectedBounds\":null,\"options\":{}}},\"calls\":[{\"method\":\"addTiles\",\"args\":[\"//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\",null,null,{\"minZoom\":0,\"maxZoom\":18,\"tileSize\":256,\"subdomains\":\"abc\",\"errorTileUrl\":\"\",\"tms\":false,\"noWrap\":false,\"zoomOffset\":0,\"zoomReverse\":false,\"opacity\":1,\"zIndex\":1,\"detectRetina\":false,\"attribution\":\"&copy; <a href=\\\"http://openstreetmap.org\\\">OpenStreetMap<\\/a> contributors, <a href=\\\"http://creativecommons.org/licenses/by-sa/2.0/\\\">CC-BY-SA<\\/a>\"}]},{\"method\":\"addPopups\",\"args\":[40.49518,-74.445068,\"This is where the <b>RAP Group<\\/b> is located.\",null,null,{\"maxWidth\":300,\"minWidth\":50,\"autoPan\":true,\"keepInView\":false,\"closeButton\":true,\"className\":\"\"}]}],\"setView\":[[40.49518,-74.445068],17,[]],\"limits\":{\"lat\":[40.49518,40.49518],\"lng\":[-74.445068,-74.445068]}},\"evals\":[],\"jsHooks\":[]}\nJoin us\nIf you are interested in working in the lab in some capacity or studying bilingualism/second language acquisition at Rutgers, please contact Professor Casillas. If you are interested in participating in an experiment click here.\n\nParticipate in an experiment\n\n\n\n",
-      "last_modified": "2021-02-04T22:29:41-05:00"
+      "last_modified": "2021-02-04T22:55:11-05:00"
     },
     {
       "path": "people.html",
@@ -22,14 +22,14 @@
       "description": "Rutgers Applied Phonetics Group \n",
       "author": [],
       "contents": "\nCurrent members\nName\nRole\nEmail\nWebsite\nJoseph Casillas\nPI\njoseph.casillas@rutgers.edu\nwww.jvcasillas.com\nLaura Fernández\nPhD student\nlf402@spanport.rutgers.edu\nhttps://laurafdeza.github.io\nNicole Rodríguez\nPhD student\nnicole.rodriguez@rutgers.edu\nhttps://nmrodriguez.github.io\nJuan José Garrido Pozu\nPhD student\n\n\nKyle Parrish\nPhD student\n\n\nPhD Students\nLaura Fernández\nNicole Rodríguez\nFormer members\nAvery Field (Aresty, Montclair State)\nJack Fastenau (Lab assistant, New Jersey Medical School)\nCollaborators\nDr. Miquel Simonet (University of Arizona)\n\n\n\n",
-      "last_modified": "2021-02-04T22:25:38-05:00"
+      "last_modified": "2021-02-04T22:55:11-05:00"
     },
     {
       "path": "posts.html",
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n\n",
-      "last_modified": "2021-02-04T22:25:39-05:00"
+      "last_modified": "2021-02-04T22:55:11-05:00"
     },
     {
       "path": "research.html",
@@ -37,7 +37,7 @@
       "description": "Rutgers Applied Phonetics Group \n",
       "author": [],
       "contents": "\n\n\n\n\n",
-      "last_modified": "2021-02-04T22:25:39-05:00"
+      "last_modified": "2021-02-04T22:55:12-05:00"
     }
   ],
   "collections": ["posts/posts.json", "articles/articles.json"]
