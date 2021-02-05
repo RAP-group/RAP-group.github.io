@@ -13,7 +13,7 @@ collections:
     disqus: rap-group.github.io
     share: [twitter, linkedin]
     subscribe: _subscribe.html
-output_dir: "_site"
+output_dir: "./_docs"
 navbar:
   logo: images/ru.png
   left:
