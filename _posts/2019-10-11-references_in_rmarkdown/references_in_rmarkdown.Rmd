@@ -10,7 +10,7 @@ author:
   - name: Joseph V. Casillas
 date: 10-11-2019
 output:
-  radix::radix_article:
+  distill::distill_article:
     self_contained: false
 draft: false
 bibliography: ./references_in_rmarkdown_files/sample_refs.bib
