@@ -2,7 +2,7 @@
 title: "Lab"
 description: |
   Rutgers Applied Phonetics Group 
-site: radix::radix_website
+site: distill::distill_website
 ---
 
 # Research
@@ -40,7 +40,7 @@ Coming soon...
 The lab is located on the 4th floor of 1 Spring Street in downtown New 
 Brunswick. 
 
-```{r}
+```{r, 'lab-map', echo=F}
 library(leaflet)
 spring_street <- leaflet() %>% 
   addTiles() %>%

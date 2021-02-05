@@ -2,7 +2,7 @@
 title: "Research"
 description: |
   Rutgers Applied Phonetics Group 
-site: radix::radix_website
+site: distill::distill_website
 listing: articles
 ---
 

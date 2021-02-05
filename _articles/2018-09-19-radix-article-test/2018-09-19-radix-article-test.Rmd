@@ -12,7 +12,7 @@ categories:
   - testing
 date: 09-19-2018
 output:
-  radix::radix_article:
+  distill::distill_article:
     self_contained: false
 ---
 
