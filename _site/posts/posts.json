@@ -1,0 +1,44 @@
+[
+  {
+    "path": "posts/2019-10-11-references_in_rmarkdown/",
+    "title": "Automatic references in RMarkdown",
+    "description": "A quick tutorial on how to cite references in RMarkdown.",
+    "author": [
+      {
+        "name": "Joseph V. Casillas",
+        "url": {}
+      }
+    ],
+    "date": "2019-10-11",
+    "categories": [
+      "RAP group",
+      "Writing",
+      "Workflow"
+    ],
+    "contents": "\nOverview\nUsing RMarkdown to generate reproducible documents has a lot of advantages. One of them is the ability to import .bib files to cite sources and automagically generate a bibliography. In this post we will go over a simple workflow for importing a bib file, citing some articles, and generating a references section.\nGetting started\nFirst, we’ll need a .bib file to import. For this post we will use a simple example that can be downloaded here. This file should live in the same directory as your .Rmd file (or you can specify a custom path in the YAML frontmatter). The file in this case is sample_refs.bib and contains two references: flege1995 and kuhl1992.\n\n\n\nIf we open the file (it’s just a normal text file with a .bib ending) we will see LaTeX/bibtex syntax:\n@article{flege1995,\n  title={Second language speech learning: Theory, findings, and problems},\n  author={Flege, James E},\n  journal={Speech perception and linguistic experience: Issues in cross-language research},\n  volume={92},\n  pages={233--277},\n  year={1995}\n}\n\n@article {kuhl1992,\n  author = {Kuhl, PK and Williams, KA and Lacerda, F and Stevens, KN and Lindblom, B},\n  title = {Linguistic experience alters phonetic perception in infants by 6 months of age},\n  volume = {255},\n  number = {5044},\n  pages = {606--608},\n  year = {1992},\n  journal = {Science}\n}\nThe advantage of using a .bib file for citing references is that all we have to do is supple the important information, i.e., author, year, etc., and Rmarkdown will tell pandoc-citeproc how to format them. In our case we will use the default, but you can use any format you want (even custom formats). For example, you can download an APA Citations Style Language file (apa.csl) from here. If you do this make sure to put this file in the same directory as your .Rmd file (or specify a custom path). Once you have done that you need to update the YAML frontmatter of your document so that it looks something like this:\n---\ntitle: \"A title\"\noutput: \n  pdf_document\n  html_document\nbibliography: sample_refs.bib\n---\nAnd if you are going to use a specific CSL you add another line after bibliography: sample_refs.bib specifying the path. Like this:\ncsl: apa.csl\nNow we are ready to cite some sources. We can use standard markdown syntax for this (see here for more details). For example, we can cite the Flege article as a parenthetical reference using [@flege1995]:\nThe Speech Learning Model (Flege, 1995)(Flege 1995) is pretty cool.\nTo render the above citation I typed this:\nThe Speech Learning Model [@flege1995] is pretty cool.\nNote that the formatting of this blog uses numbered citations (see the References section at the bottom). Now I can also use in-text citations by typing @kuhl1992 (without the brackets):\nKuhl (1992)Kuhl et al. (1992) has a great TED talk.\n@kuhl1992 has a great TED talk. \nAt the end of your document you need to add a section header called References:\n# References\nand then your bibliography will be generated automatically. You can download a working example to test this and use as a template here.\n\n\n\nFlege, James E. 1995. “Second Language Speech Learning: Theory, Findings, and Problems.” Speech Perception and Linguistic Experience: Issues in Cross-Language Research 92: 233–77.\n\n\nKuhl, PK, KA Williams, F Lacerda, KN Stevens, and B Lindblom. 1992. “Linguistic Experience Alters Phonetic Perception in Infants by 6 Months of Age.” Science 255 (5044): 606–8.\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-02-04T22:25:22-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2019-03-07-hearing-screenings/",
+    "title": "Free hearing screenings at 1 Spring street\n",
+    "description": "RAP-group accommodates RU Speech and Hearing Club to host free \nhearing screening",
+    "author": [
+      {
+        "name": "Joseph V. Casillas",
+        "url": {}
+      }
+    ],
+    "date": "2019-03-07",
+    "categories": [
+      "RAP group",
+      "sound booth",
+      "Speech and hearing"
+    ],
+    "contents": "\nThe RU Speech and Hearing Club hosted a free Hearing Screening in the RAP-group sound booth on 1 Spring street.\nThe purpose of the event was to allow aspiring audiologists and speech pathologists in the Speech and Hearing Club hands-on experience administering hearing tests using audiometers with professional audiologist, Dr. Karen Kushla.\nThe Speech and Hearing Club members worked in pairs, with one student operating the audiometer while the other student noted the results. Dr. Kushla supervised the screening and interpreted the results for the participants.\nIn a typical hearing screening a series of tones are presented through headphones one ear at a time and the hearer raises their hand if/when they hear the tone. First, a 500 Hz pure tone at 40 dB HL. If the hearer perceives the tone then the intensity is reduced to 25 dB HL, and then to 20 dB HL. Next, the frequency is raised to 1000 Hz and the process is repeated.\nIt was a great experience for some future audiologists.\nhearing-screening",
+    "preview": {},
+    "last_modified": "2020-09-08T11:42:29-04:00",
+    "input_file": {}
+  }
+]

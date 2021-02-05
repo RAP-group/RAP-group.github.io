@@ -1,0 +1,24 @@
+[
+  {
+    "path": "articles/2018-09-19-radix-article-test/",
+    "title": "Radix article test",
+    "description": "A new article created using the Radix format.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2018-09-19",
+    "categories": [
+      "radix",
+      "testing"
+    ],
+    "contents": "\nRadix is a publication format for scientific and technical writing, native to the web.\nLearn more about using Radix at https://rstudio.github.io/radix.\n\n\n\n\n\n",
+    "preview": "articles/2018-09-19-radix-article-test/2018-09-19-radix-article-test_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2018-09-23T21:55:17-04:00",
+    "input_file": {},
+    "preview_width": 1152,
+    "preview_height": 768
+  }
+]
