@@ -7,25 +7,29 @@ site: distill::distill_website
 
 ## Current members
 
-| Name                   | Role        | Email                        | Website            |
-| :--------------------- | :---------- | :--------------------------- | :----------------- |
-| Joseph Casillas        | PI          | joseph.casillas@rutgers.edu  | www.jvcasillas.com |
-| Laura Fernández        | PhD student | lf402@spanport.rutgers.edu   | https://laurafdeza.github.io |
-| Nicole Rodríguez       | PhD student | nicole.rodriguez@rutgers.edu | https://nmrodriguez.github.io |
-| Juan José Garrido Pozu | PhD student |                              |                   |
-| Kyle Parrish           | PhD student |                              |                   |
-
-
-## PhD Students
-
-- Laura Fernández
-- Nicole Rodríguez
+```{r, members, echo=F, layout="l-body-outset"}
+tibble::tribble(
+  ~'Name', ~'Role', ~'Email', ~'Website',
+  "Joseph Casillas", "PI", "joseph.casillas@rutgers.edu", "[www.jvcasillas.com](https://www.jvcasillas.com)",
+  "Laura Fernández", "PhD student", "lf402@spanport.rutgers.edu", "https://laurafdeza.github.io",
+  "Juan José Garrido Pozu", "PhD student", "jjg280@scarletmail.rutgers.edu", " ",
+  "Kyle Parrish", "PhD student", "kcp74@scarletmail.rutgers.edu", " ",
+  "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", " ",
+  "Jiawei Shao", "PhD student", "js2845@scarletmail.rutgers.edu", " ",
+  "Iván Andreu", "PhD student", "ia308@connect.rutgers.edu", " ",
+  "Isabelle Chang", "Aresty assistant", "isc22@scarletmail.rutgers.edu", " ",
+  "Katherine Taveras", "Aresty assistant", "kgtaveras@gmail.com", " ",
+  ) |> 
+  knitr::kable()
+```
 
 ## Former members
 
 - Avery Field (Aresty, Montclair State)
 - Jack Fastenau (Lab assistant, New Jersey Medical School)
+- Kimberly Gómez (Aresty lab assistant)
 
 ## Collaborators
 
 - Dr. Miquel Simonet (University of Arizona)
+- Dr. Nicole Rodríguez (Post-doc, Adam Mickiewicz University, Poznań, Poland)

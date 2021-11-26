@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -55,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>RAP Group: Lab</title>
@@ -455,7 +457,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1862,7 +1864,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2033,8 +2038,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
-  <script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
   <script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
   <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
   <script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
@@ -2253,13 +2258,13 @@ News
 <h1 id="location">Location</h1>
 <p>The lab is located on the 4th floor of 1 Spring Street in downtown New Brunswick.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div id="htmlwidget-ab59e813e8b131d598b4" style="width:624px;height:384px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ab59e813e8b131d598b4">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[40.49518,-74.445068,"This is where the <b>RAP Group<\/b> is located.",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]}],"setView":[[40.49518,-74.445068],17,[]],"limits":{"lat":[40.49518,40.49518],"lng":[-74.445068,-74.445068]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d7d58cd3b713513ee9f4" style="width:624px;height:384px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d7d58cd3b713513ee9f4">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[40.49518,-74.445068,"This is where the <b>RAP Group<\/b> is located.",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]}],"setView":[[40.49518,-74.445068],17,[]],"limits":{"lat":[40.49518,40.49518],"lng":[-74.445068,-74.445068]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <h1 id="join-us">Join us</h1>
 <p>If you are interested in working in the lab in some capacity or studying bilingualism/second language acquisition at Rutgers, please contact Professor Casillas. If you are interested in participating in an experiment <a href="mailto:ru.rap.group@gmail.com">click here</a>.</p>
 <aside>
-<p><a href="mailto:joseph.casillas@rutgers.edu"><svg style="height:20;fill:grey;" viewBox="0 0 512 512"><path d="M512 464c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V200.724a48 48 0 0 1 18.387-37.776c24.913-19.529 45.501-35.365 164.2-121.511C199.412 29.17 232.797-.347 256 .003c23.198-.354 56.596 29.172 73.413 41.433 118.687 86.137 139.303 101.995 164.2 121.512A48 48 0 0 1 512 200.724V464zm-65.666-196.605c-2.563-3.728-7.7-4.595-11.339-1.907-22.845 16.873-55.462 40.705-105.582 77.079-16.825 12.266-50.21 41.781-73.413 41.43-23.211.344-56.559-29.143-73.413-41.43-50.114-36.37-82.734-60.204-105.582-77.079-3.639-2.688-8.776-1.821-11.339 1.907l-9.072 13.196a7.998 7.998 0 0 0 1.839 10.967c22.887 16.899 55.454 40.69 105.303 76.868 20.274 14.781 56.524 47.813 92.264 47.573 35.724.242 71.961-32.771 92.263-47.573 49.85-36.179 82.418-59.97 105.303-76.868a7.998 7.998 0 0 0 1.839-10.967l-9.071-13.196z"/></svg></a></p>
+<p><a href="mailto:joseph.casillas@rutgers.edu"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:2em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:grey;overflow:visible;position:relative;"><path d="M512 464c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V200.724a48 48 0 0 1 18.387-37.776c24.913-19.529 45.501-35.365 164.2-121.511C199.412 29.17 232.797-.347 256 .003c23.198-.354 56.596 29.172 73.413 41.433 118.687 86.137 139.303 101.995 164.2 121.512A48 48 0 0 1 512 200.724V464zm-65.666-196.605c-2.563-3.728-7.7-4.595-11.339-1.907-22.845 16.873-55.462 40.705-105.582 77.079-16.825 12.266-50.21 41.781-73.413 41.43-23.211.344-56.559-29.143-73.413-41.43-50.114-36.37-82.734-60.204-105.582-77.079-3.639-2.688-8.776-1.821-11.339 1.907l-9.072 13.196a7.998 7.998 0 0 0 1.839 10.967c22.887 16.899 55.454 40.69 105.303 76.868 20.274 14.781 56.524 47.813 92.264 47.573 35.724.242 71.961-32.771 92.263-47.573 49.85-36.179 82.418-59.97 105.303-76.868a7.998 7.998 0 0 0 1.839-10.967l-9.071-13.196z"/></svg></a></p>
 <a href="mailto:ru.rap.group@gmail.com">Participate in an experiment</a>
 </aside>
 <!-- https://sites.rutgers.edu/language-studies/undergraduates/ -->
@@ -2280,7 +2285,7 @@ News
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
 <p><img width="125px" src="images/rap-group-v3.png"/><br />
-© Copyright 2020<br />
+© Copyright 2022<br />
 <a href="https://www.jvcasillas.com">Joseph V. Casillas</a></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->

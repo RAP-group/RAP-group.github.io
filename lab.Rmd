@@ -41,7 +41,7 @@ The lab is located on the 4th floor of 1 Spring Street in downtown New
 Brunswick. 
 
 ```{r, 'lab-map', echo=F}
-library(leaflet)
+library("leaflet")
 spring_street <- leaflet() %>% 
   addTiles() %>%
   setView(-74.445068, 40.495180, zoom = 17) %>%
@@ -60,7 +60,7 @@ If you are interested in participating in an experiment
 
 
 <aside>
-[`r fontawesome::fa("envelope-open", height = 20, fill = 'grey')`](mailto:joseph.casillas@rutgers.edu)  
+[`r fontawesome::fa("envelope-open", height = "2em", fill = 'grey')`](mailto:joseph.casillas@rutgers.edu)  
 
 [Participate in an experiment](mailto:ru.rap.group@gmail.com)
 </aside>
