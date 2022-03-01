@@ -11,60 +11,45 @@ site: distill::distill_website
 <!-- Portfolio Gallery Grid -->
 <!-- all images 225 x 300 --> 
 
-<div class="row">
- <div class="column">
-  <div class="content">
-   <img src="./images/members/lfa.png" alt="member" style="width:100%">
-   <small_text>Laura Fernández Arroyo</small_text>
-  </div>
- </div>
- <div class="column">
-  <div class="content">
-   <img src="./images/members/jjgp.jpeg" alt="member" style="width:100%">
-   <small_text>Juan José Garrido Pozú</small_text>
-  </div>
- </div>
- <div class="column">
-  <div class="content">
-   <img src="./images/members/kp.jpeg" alt="member" style="width:100%">
-   <small_text>Kyle Parrish</small_text>
-  </div>
- </div>
- <div class="column">
-  <div class="content">
-   <img src="./images/members/gcd.jpeg" alt="member" style="width:100%">
-   <small_text>Gabriela Constantin-Dureci</small_text>
-  </div>
- </div>
-</div>
 
 
-<div class="row">
- <div class="column">
-  <div class="content">
-   <img src="./images/members/jis.jpeg" alt="member" style="width:100%">
-   <small_text>Jiawei Shao</small_text>
-  </div>
- </div>
- <div class="column">
-  <div class="content">
-   <img src="./images/members/ira.jpeg" alt="member" style="width:100%">
-   <small_text>Iván Andreu Rascón</small_text>
-  </div>
- </div>
- <div class="column">
-  <div class="content">
-   <img src="./images/members/schwa.png" alt="member" style="width:100%">
-   <small_text>Isabelle Chang</small_text>
-  </div>
- </div>
- <div class="column">
-  <div class="content">
-   <img src="./images/members/schwa.png" alt="member" style="width:100%">
-   <small_text>Katherine Taveras</small_text>
-  </div>
- </div>
+```{r, echo=F, results='asis'}
+library("glue")
+library("fs")
+library("here")
+library("dplyr")
+library("tibble")
+library("stringr")
+
+members <- tribble(
+  ~'Name', ~'Role', ~'Email', ~'Website', ~'img', 
+  "Joseph V. Casillas", "PI", "joseph.casillas@rutgers.edu", "https://www.jvcasillas.com", "jvc.png",
+  "Laura Fernández Arroyo", "PhD student", "lf402@spanport.rutgers.edu", "https://laurafdeza.github.io", "lfa.png",
+  "Juan José Garrido Pozú", "PhD student", "jjg280@scarletmail.rutgers.edu", " ", "jjgp.jpeg",
+  "Kyle Parrish", "PhD student", "kcp74@scarletmail.rutgers.edu", " ", "kp.jpeg", 
+  "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", " ", "gcd.jpeg", 
+  "Jiawei Shao", "PhD student", "js2845@scarletmail.rutgers.edu", " ", "jis.jpeg", 
+  "Iván Andreu Rascón", "PhD student", "ia308@connect.rutgers.edu", " ", "ira.jpeg", 
+  "Isabelle Chang", "Research assistant", "isc22@scarletmail.rutgers.edu", " ", "schwa.png", 
+  "Katherine Taveras", "Research assistant", "kgtaveras@gmail.com", " ", "schwa.png", 
+  ) 
+
+cat('<div class="row">\n <div class="column">')
+glue(
+'
+<div class="content">
+ <center>
+ <a href="{members$Website}">
+ <img src="./images/members/{members$img}" alt="member" style="width:30%">
+ </a>\n
+ <small_text>[{members$Name}](mailto:{members$Email}), {members$Role}</small_text>
+ </center>
 </div>
+'
+)
+cat(' </div>\n</div>')
+```
+
 
 
 
@@ -87,18 +72,8 @@ site: distill::distill_website
 ## Directory
 
 ```{r, members, echo=F, layout="l-body-outset"}
-tibble::tribble(
-  ~'Name', ~'Role', ~'Email', ~'Website',
-  "Joseph Casillas", "PI", "joseph.casillas@rutgers.edu", "[www.jvcasillas.com](https://www.jvcasillas.com)",
-  "Laura Fernández", "PhD student", "lf402@spanport.rutgers.edu", "https://laurafdeza.github.io",
-  "Juan José Garrido Pozu", "PhD student", "jjg280@scarletmail.rutgers.edu", " ",
-  "Kyle Parrish", "PhD student", "kcp74@scarletmail.rutgers.edu", " ",
-  "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", " ",
-  "Jiawei Shao", "PhD student", "js2845@scarletmail.rutgers.edu", " ",
-  "Iván Andreu", "PhD student", "ia308@connect.rutgers.edu", " ",
-  "Isabelle Chang", "Aresty assistant", "isc22@scarletmail.rutgers.edu", " ",
-  "Katherine Taveras", "Aresty assistant", "kgtaveras@gmail.com", " ",
-  ) |> 
+members %>% 
+  select(-img) %>% 
   knitr::kable()
 ```
 
@@ -108,7 +83,7 @@ tibble::tribble(
 <style type="text/css">
 
 small_text {
-  font-size: .75em;
+  font-size: .85em;
 }
 
 * {
@@ -132,7 +107,7 @@ body {
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 100%;
 }
 
 /* Clear floats after rows */ 
@@ -151,14 +126,14 @@ body {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
-    width: 25%;
+    width: 70%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    width: 90%;
   }
 }
 
