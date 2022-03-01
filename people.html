@@ -2227,6 +2227,64 @@ News
 
 <div class="d-article">
 <h2 id="current-members">Current members</h2>
+<!-- Portfolio Gallery Grid -->
+<!-- all images 225 x 300 -->
+<div class="row">
+<div class="column">
+<div class="content">
+<img src="images/members/lfa.png" alt="member" style="width:100%"> <small_text>Laura Fernández Arroyo</small_text>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<img src="images/members/jjgp.jpeg" alt="member" style="width:100%"> <small_text>Juan José Garrido Pozú</small_text>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<img src="images/members/kp.jpeg" alt="member" style="width:100%"> <small_text>Kyle Parrish</small_text>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<img src="images/members/gcd.jpeg" alt="member" style="width:100%"> <small_text>Gabriela Constantin-Dureci</small_text>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="column">
+<div class="content">
+<img src="images/members/jis.jpeg" alt="member" style="width:100%"> <small_text>Jiawei Shao</small_text>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<img src="images/members/ira.jpeg" alt="member" style="width:100%"> <small_text>Iván Andreu Rascón</small_text>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<img src="images/members/schwa.png" alt="member" style="width:100%"> <small_text>Isabelle Chang</small_text>
+</div>
+</div>
+<div class="column">
+<div class="content">
+<img src="images/members/schwa.png" alt="member" style="width:100%"> <small_text>Katherine Taveras</small_text>
+</div>
+</div>
+</div>
+<h2 id="former-members">Former members</h2>
+<ul>
+<li>Avery Field (Aresty, Montclair State)</li>
+<li>Jack Fastenau (Lab assistant, New Jersey Medical School)</li>
+<li>Kimberly Gómez (Aresty lab assistant)</li>
+</ul>
+<h2 id="collaborators">Collaborators</h2>
+<ul>
+<li>Dr. Miquel Simonet (University of Arizona)</li>
+<li>Dr. Nicole Rodríguez (Post-doc, Adam Mickiewicz University, Poznań, Poland)</li>
+</ul>
+<h2 id="directory">Directory</h2>
 <div class="layout-chunk" data-layout="l-body-outset">
 <table>
 <colgroup>
@@ -2301,17 +2359,64 @@ News
 </tbody>
 </table>
 </div>
-<h2 id="former-members">Former members</h2>
-<ul>
-<li>Avery Field (Aresty, Montclair State)</li>
-<li>Jack Fastenau (Lab assistant, New Jersey Medical School)</li>
-<li>Kimberly Gómez (Aresty lab assistant)</li>
-</ul>
-<h2 id="collaborators">Collaborators</h2>
-<ul>
-<li>Dr. Miquel Simonet (University of Arizona)</li>
-<li>Dr. Nicole Rodríguez (Post-doc, Adam Mickiewicz University, Poznań, Poland)</li>
-</ul>
+<style type="text/css">
+
+small_text {
+  font-size: .75em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 25%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

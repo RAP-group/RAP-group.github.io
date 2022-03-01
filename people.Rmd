@@ -5,7 +5,86 @@ description: |
 site: distill::distill_website
 ---
 
+
 ## Current members
+
+<!-- Portfolio Gallery Grid -->
+<!-- all images 225 x 300 --> 
+
+<div class="row">
+ <div class="column">
+  <div class="content">
+   <img src="./images/members/lfa.png" alt="member" style="width:100%">
+   <small_text>Laura Fernández Arroyo</small_text>
+  </div>
+ </div>
+ <div class="column">
+  <div class="content">
+   <img src="./images/members/jjgp.jpeg" alt="member" style="width:100%">
+   <small_text>Juan José Garrido Pozú</small_text>
+  </div>
+ </div>
+ <div class="column">
+  <div class="content">
+   <img src="./images/members/kp.jpeg" alt="member" style="width:100%">
+   <small_text>Kyle Parrish</small_text>
+  </div>
+ </div>
+ <div class="column">
+  <div class="content">
+   <img src="./images/members/gcd.jpeg" alt="member" style="width:100%">
+   <small_text>Gabriela Constantin-Dureci</small_text>
+  </div>
+ </div>
+</div>
+
+
+<div class="row">
+ <div class="column">
+  <div class="content">
+   <img src="./images/members/jis.jpeg" alt="member" style="width:100%">
+   <small_text>Jiawei Shao</small_text>
+  </div>
+ </div>
+ <div class="column">
+  <div class="content">
+   <img src="./images/members/ira.jpeg" alt="member" style="width:100%">
+   <small_text>Iván Andreu Rascón</small_text>
+  </div>
+ </div>
+ <div class="column">
+  <div class="content">
+   <img src="./images/members/schwa.png" alt="member" style="width:100%">
+   <small_text>Isabelle Chang</small_text>
+  </div>
+ </div>
+ <div class="column">
+  <div class="content">
+   <img src="./images/members/schwa.png" alt="member" style="width:100%">
+   <small_text>Katherine Taveras</small_text>
+  </div>
+ </div>
+</div>
+
+
+
+
+
+## Former members
+
+- Avery Field (Aresty, Montclair State)
+- Jack Fastenau (Lab assistant, New Jersey Medical School)
+- Kimberly Gómez (Aresty lab assistant)
+
+## Collaborators
+
+- Dr. Miquel Simonet (University of Arizona)
+- Dr. Nicole Rodríguez (Post-doc, Adam Mickiewicz University, Poznań, Poland)
+
+
+
+
+## Directory
 
 ```{r, members, echo=F, layout="l-body-outset"}
 tibble::tribble(
@@ -23,13 +102,65 @@ tibble::tribble(
   knitr::kable()
 ```
 
-## Former members
 
-- Avery Field (Aresty, Montclair State)
-- Jack Fastenau (Lab assistant, New Jersey Medical School)
-- Kimberly Gómez (Aresty lab assistant)
 
-## Collaborators
 
-- Dr. Miquel Simonet (University of Arizona)
-- Dr. Nicole Rodríguez (Post-doc, Adam Mickiewicz University, Poznań, Poland)
+<style type="text/css">
+
+small_text {
+  font-size: .75em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 25%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+

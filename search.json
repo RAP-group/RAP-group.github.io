@@ -6,7 +6,7 @@
       "description": "Rutgers Applied Phonetics Group \n",
       "author": [],
       "contents": "\nThe Rutgers Applied Phonetics Group is run by Joseph Casillas and is based out of the Department of Spanish and Portuguese at Rutgers University, New Brunswick.\n\n\n\n\n\n\n",
-      "last_modified": "2021-11-26T13:30:10-05:00"
+      "last_modified": "2021-11-26T13:31:55-05:00"
     },
     {
       "path": "lab.html",
@@ -14,22 +14,22 @@
       "description": "Rutgers Applied Phonetics Group \n",
       "author": [],
       "contents": "\nResearch\nThe RAP group conducts research focused on the phonetics and phonology of second language acquisition and bilingualism. Specifically, we explore the production, perception and spoken word recognition of bilinguals with varying linguistic experience.\nEquipment\nOur lab is houses professional equipment used to conduct behavioral experiments related to speech perception and speech articulation. Furthermore, we use open-source software for stimuli presentation (Python), data management (git), and statistical analysis (R). Here is a list of some of the equipment we use:\nWhisper room 6084 E sound booth\nFostex DC-R302 digital recorder\nSound Devices MM1 Pre-amp\nSure SM10A head-mounted microphones\nEye tribe eye-tracking devices\nMacbook Pro field laptops\nCedrus response button boxes\nComing soon…\nMac Mini computers\nTobii eye-trackers\nAdditional field microphones\nAloka ultrasound imager\nLocation\nThe lab is located on the 4th floor of 1 Spring Street in downtown New Brunswick.\n\n\n{\"x\":{\"options\":{\"crs\":{\"crsClass\":\"L.CRS.EPSG3857\",\"code\":null,\"proj4def\":null,\"projectedBounds\":null,\"options\":{}}},\"calls\":[{\"method\":\"addTiles\",\"args\":[\"//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\",null,null,{\"minZoom\":0,\"maxZoom\":18,\"tileSize\":256,\"subdomains\":\"abc\",\"errorTileUrl\":\"\",\"tms\":false,\"noWrap\":false,\"zoomOffset\":0,\"zoomReverse\":false,\"opacity\":1,\"zIndex\":1,\"detectRetina\":false,\"attribution\":\"&copy; <a href=\\\"http://openstreetmap.org\\\">OpenStreetMap<\\/a> contributors, <a href=\\\"http://creativecommons.org/licenses/by-sa/2.0/\\\">CC-BY-SA<\\/a>\"}]},{\"method\":\"addPopups\",\"args\":[40.49518,-74.445068,\"This is where the <b>RAP Group<\\/b> is located.\",null,null,{\"maxWidth\":300,\"minWidth\":50,\"autoPan\":true,\"keepInView\":false,\"closeButton\":true,\"className\":\"\"}]}],\"setView\":[[40.49518,-74.445068],17,[]],\"limits\":{\"lat\":[40.49518,40.49518],\"lng\":[-74.445068,-74.445068]}},\"evals\":[],\"jsHooks\":[]}\nJoin us\nIf you are interested in working in the lab in some capacity or studying bilingualism/second language acquisition at Rutgers, please contact Professor Casillas. If you are interested in participating in an experiment click here.\n\nParticipate in an experiment\n\n\n\n",
-      "last_modified": "2021-11-26T13:30:10-05:00"
+      "last_modified": "2021-11-26T13:31:55-05:00"
     },
     {
       "path": "people.html",
       "title": "People",
       "description": "Rutgers Applied Phonetics Group \n",
       "author": [],
-      "contents": "\nCurrent members\n\nName\nRole\nEmail\nWebsite\nJoseph Casillas\nPI\njoseph.casillas@rutgers.edu\nwww.jvcasillas.com\nLaura Fernández\nPhD student\nlf402@spanport.rutgers.edu\nhttps://laurafdeza.github.io\nJuan José Garrido Pozu\nPhD student\njjg280@scarletmail.rutgers.edu\n\nKyle Parrish\nPhD student\nkcp74@scarletmail.rutgers.edu\n\nGabriela Constantin-Dureci\nPhD student\ngabriela.constantin.dureci@rutgers.edu\n\nJiawei Shao\nPhD student\njs2845@scarletmail.rutgers.edu\n\nIván Andreu\nPhD student\nia308@connect.rutgers.edu\n\nIsabelle Chang\nAresty assistant\nisc22@scarletmail.rutgers.edu\n\nKatherine Taveras\nAresty assistant\nkgtaveras@gmail.com\n\n\nFormer members\nAvery Field (Aresty, Montclair State)\nJack Fastenau (Lab assistant, New Jersey Medical School)\nKimberly Gómez (Aresty lab assistant)\nCollaborators\nDr. Miquel Simonet (University of Arizona)\nDr. Nicole Rodríguez (Post-doc, Adam Mickiewicz University, Poznań, Poland)\n\n\n\n",
-      "last_modified": "2021-11-26T13:30:11-05:00"
+      "contents": "\nCurrent members\n\n\n\n\n\nLaura Fernández Arroyo\n\n\n\nJuan José Garrido Pozú\n\n\n\nKyle Parrish\n\n\n\nGabriela Constantin-Dureci\n\n\n\n\n\nJiawei Shao\n\n\n\nIván Andreu Rascón\n\n\n\nIsabelle Chang\n\n\n\nKatherine Taveras\n\n\nFormer members\nAvery Field (Aresty, Montclair State)\nJack Fastenau (Lab assistant, New Jersey Medical School)\nKimberly Gómez (Aresty lab assistant)\nCollaborators\nDr. Miquel Simonet (University of Arizona)\nDr. Nicole Rodríguez (Post-doc, Adam Mickiewicz University, Poznań, Poland)\nDirectory\n\nName\nRole\nEmail\nWebsite\nJoseph Casillas\nPI\njoseph.casillas@rutgers.edu\nwww.jvcasillas.com\nLaura Fernández\nPhD student\nlf402@spanport.rutgers.edu\nhttps://laurafdeza.github.io\nJuan José Garrido Pozu\nPhD student\njjg280@scarletmail.rutgers.edu\n\nKyle Parrish\nPhD student\nkcp74@scarletmail.rutgers.edu\n\nGabriela Constantin-Dureci\nPhD student\ngabriela.constantin.dureci@rutgers.edu\n\nJiawei Shao\nPhD student\njs2845@scarletmail.rutgers.edu\n\nIván Andreu\nPhD student\nia308@connect.rutgers.edu\n\nIsabelle Chang\nAresty assistant\nisc22@scarletmail.rutgers.edu\n\nKatherine Taveras\nAresty assistant\nkgtaveras@gmail.com\n\n\n\n\nsmall_text {\n  font-size: .75em;\n}\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #fff;\n}\n\n.row {\n  margin: 8px -16px;\n}\n\n/* Add padding BETWEEN each column (if you want) */\n.row,\n.row > .column {\n  padding: 8px;\n}\n\n/* Create four equal columns that floats next to each other */\n.column {\n  float: left;\n  width: 50%;\n}\n\n/* Clear floats after rows */ \n.row:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n/* Content */\n.content {\n  background-color: white;\n  padding: 10px;\n}\n\n/* Responsive layout - makes a two column-layout instead of four columns */\n@media screen and (max-width: 900px) {\n  .column {\n    width: 25%;\n  }\n}\n\n/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */\n@media screen and (max-width: 600px) {\n  .column {\n    width: 100%;\n  }\n}\n\n\n\n\n",
+      "last_modified": "2022-02-28T22:34:27-05:00"
     },
     {
       "path": "posts.html",
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n\n",
-      "last_modified": "2021-11-26T13:30:12-05:00"
+      "last_modified": "2021-11-26T13:31:55-05:00"
     },
     {
       "path": "research.html",
@@ -37,7 +37,7 @@
       "description": "Rutgers Applied Phonetics Group \n",
       "author": [],
       "contents": "\n\n\n\n\n",
-      "last_modified": "2021-11-26T13:30:12-05:00"
+      "last_modified": "2021-11-26T13:31:55-05:00"
     }
   ],
   "collections": ["posts/posts.json", "articles/articles.json"]
