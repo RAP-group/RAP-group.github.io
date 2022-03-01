@@ -38,12 +38,14 @@ cat('<div class="row">\n <div class="column">')
 glue(
 '
 <div class="content">
+ <div class="zoom">
  <center>
  <a href="{members$Website}">
  <img src="./images/members/{members$img}" alt="member" style="width:30%">
  </a>\n
- <small_text>[{members$Name}](mailto:{members$Email}), {members$Role}</small_text>
+ <small_text>[{members$Name}](mailto:{members$Email}), {members$Role}</small_text>\n
  </center>
+ </div>
 </div>
 '
 )
