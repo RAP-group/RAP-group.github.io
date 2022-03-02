@@ -26,7 +26,7 @@ members <- tribble(
   "Joseph V. Casillas", "PI", "joseph.casillas@rutgers.edu", "https://www.jvcasillas.com", "jvc.png",
   "Laura Fernández Arroyo", "PhD student", "lf402@spanport.rutgers.edu", "https://laurafdeza.github.io", "lfa.png",
   "Juan José Garrido Pozú", "PhD student", "jjg280@scarletmail.rutgers.edu", " ", "jjgp.jpeg",
-  "Kyle Parrish", "PhD student", "kcp74@scarletmail.rutgers.edu", " ", "kp.jpeg", 
+  "Kyle Parrish", "PhD student", "kcp74@scarletmail.rutgers.edu", "https://kparrish92.github.io", "kp.jpeg", 
   "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", " ", "gcd.jpeg", 
   "Jiawei Shao", "PhD student", "js2845@scarletmail.rutgers.edu", " ", "jis.jpeg", 
   "Iván Andreu Rascón", "PhD student", "ia308@connect.rutgers.edu", " ", "ira.jpeg", 
