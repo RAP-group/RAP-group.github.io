@@ -24,7 +24,7 @@ library("stringr")
 members <- tribble(
   ~'Name', ~'Role', ~'Email', ~'Website', ~'img', 
   "Joseph V. Casillas", "PI", "joseph.casillas@rutgers.edu", "https://www.jvcasillas.com", "jvc.png",
-  "Laura Fernández Arroyo", "PhD student", "lf402@spanport.rutgers.edu", "https://laurafdeza.github.io", "lfa.png",
+  "Laura Fernández Arroyo", "PhD student", "lf402@spanport.rutgers.edu", "https://www.laurafdeza.com/", "lfa.png",
   "Juan José Garrido Pozú", "PhD student", "jjg280@scarletmail.rutgers.edu", " ", "jjgp.jpeg",
   "Kyle Parrish", "PhD student", "kcp74@scarletmail.rutgers.edu", "https://kparrish92.github.io", "kp.jpeg", 
   "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", " ", "gcd.jpeg", 
