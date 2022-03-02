@@ -5,23 +5,57 @@ description: |
 site: distill::distill_website
 ---
 
+
 ## Current members
 
-```{r, members, echo=F, layout="l-body-outset"}
-tibble::tribble(
-  ~'Name', ~'Role', ~'Email', ~'Website',
-  "Joseph Casillas", "PI", "joseph.casillas@rutgers.edu", "[www.jvcasillas.com](https://www.jvcasillas.com)",
-  "Laura Fernández", "PhD student", "lf402@spanport.rutgers.edu", "https://laurafdeza.github.io",
-  "Juan José Garrido Pozu", "PhD student", "jjg280@scarletmail.rutgers.edu", " ",
-  "Kyle Parrish", "PhD student", "kcp74@scarletmail.rutgers.edu", " ",
-  "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", " ",
-  "Jiawei Shao", "PhD student", "js2845@scarletmail.rutgers.edu", " ",
-  "Iván Andreu", "PhD student", "ia308@connect.rutgers.edu", " ",
-  "Isabelle Chang", "Aresty assistant", "isc22@scarletmail.rutgers.edu", " ",
-  "Katherine Taveras", "Aresty assistant", "kgtaveras@gmail.com", " ",
-  ) |> 
-  knitr::kable()
+<!-- Portfolio Gallery Grid -->
+<!-- all images 225 x 300 --> 
+
+
+
+```{r, echo=F, results='asis'}
+library("glue")
+library("fs")
+library("here")
+library("dplyr")
+library("tibble")
+library("stringr")
+
+members <- tribble(
+  ~'Name', ~'Role', ~'Email', ~'Website', ~'img', 
+  "Joseph V. Casillas", "PI", "joseph.casillas@rutgers.edu", "https://www.jvcasillas.com", "jvc.png",
+  "Laura Fernández Arroyo", "PhD student", "lf402@spanport.rutgers.edu", "https://laurafdeza.github.io", "lfa.png",
+  "Juan José Garrido Pozú", "PhD student", "jjg280@scarletmail.rutgers.edu", " ", "jjgp.jpeg",
+  "Kyle Parrish", "PhD student", "kcp74@scarletmail.rutgers.edu", "https://kparrish92.github.io", "kp.jpeg", 
+  "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", " ", "gcd.jpeg", 
+  "Jiawei Shao", "PhD student", "js2845@scarletmail.rutgers.edu", " ", "jis.jpeg", 
+  "Iván Andreu Rascón", "PhD student", "ia308@connect.rutgers.edu", " ", "ira.jpeg", 
+  "Isabelle Chang", "Research assistant", "isc22@scarletmail.rutgers.edu", " ", "schwa.png", 
+  "Katherine Taveras", "Research assistant", "kgtaveras@gmail.com", " ", "schwa.png", 
+  ) 
+
+cat('<div class="row">\n <div class="column">')
+glue(
+'
+<div class="content">
+ <div class="zoom">
+ <center>
+ <a href="{members$Website}">
+ <img src="./images/members/{members$img}" alt="member" style="width:30%">
+ </a>\n
+ <small_text>[{members$Name}](mailto:{members$Email}), {members$Role}</small_text>\n
+ </center>
+ </div>
+</div>
+'
+)
+cat(' </div>\n</div>')
 ```
+
+
+
+
+
 
 ## Former members
 
@@ -33,3 +67,77 @@ tibble::tribble(
 
 - Dr. Miquel Simonet (University of Arizona)
 - Dr. Nicole Rodríguez (Post-doc, Adam Mickiewicz University, Poznań, Poland)
+
+
+
+
+## Directory
+
+```{r, members, echo=F, layout="l-body-outset"}
+members %>% 
+  select(-img) %>% 
+  knitr::kable()
+```
+
+
+
+
+<style type="text/css">
+
+small_text {
+  font-size: .85em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 70%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 90%;
+  }
+}
+
+</style>
+
