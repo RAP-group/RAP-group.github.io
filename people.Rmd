@@ -31,7 +31,7 @@ members <- tribble(
   "Jiawei Shao", "PhD student", "js2845@scarletmail.rutgers.edu", " ", "jis.jpeg", 
   "Iván Andreu Rascón", "PhD student", "ia308@connect.rutgers.edu", " ", "ira.jpeg", 
   "Isabelle Chang", "Research assistant", "isc22@scarletmail.rutgers.edu", " ", "schwa.png", 
-  "Katherine Taveras", "Research assistant", "kgtaveras@gmail.com", " ", "schwa.png", 
+  "Katherine Taveras", "Research assistant", "kgtaveras@gmail.com", " ", "kat.jpg", 
   ) 
 
 cat('<div class="row">\n <div class="column">')
