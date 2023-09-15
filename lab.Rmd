@@ -37,7 +37,7 @@ Coming soon...
 
 # Location
 
-The lab is located on the 4th floor of 1 Spring Street in downtown New 
+The lab is located on the 4th floor of 1 Spring Street (Room 413) in downtown New 
 Brunswick. 
 
 ```{r, 'lab-map', echo=F}
