@@ -22,17 +22,29 @@ library("tibble")
 library("stringr")
 
 members <- tribble(
-  ~'Name', ~'Role', ~'Email', ~'Website', ~'img', 
-  "Joseph V. Casillas", "PI", "joseph.casillas@rutgers.edu", "https://www.jvcasillas.com", "jvc.png",
-  "Laura Fernández Arroyo", "PhD student", "lf402@spanport.rutgers.edu", "https://www.laurafdeza.com/", "lfa.png",
-  "Juan José Garrido Pozú", "PhD student", "jjg280@scarletmail.rutgers.edu", " ", "jjgp.jpeg",
-  "Kyle Parrish", "PhD student", "kcp74@scarletmail.rutgers.edu", "https://kparrish92.github.io", "kp.jpeg", 
-  "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", " ", "gcd.jpeg", 
-  "Jiawei Shao", "PhD student", "js2845@scarletmail.rutgers.edu", " ", "jis.jpeg", 
-  "Iván Andreu Rascón", "PhD student", "ia308@connect.rutgers.edu", " ", "ira.jpeg", 
-  "Isabelle Chang", "Research assistant", "isc22@scarletmail.rutgers.edu", " ", "schwa.png", 
-  "Katherine Taveras", "Research assistant", "kgtaveras@gmail.com", " ", "kat.jpg", 
-  ) 
+  ~'current', ~'Name', ~'Role', ~'Email', ~'Website', ~'img', 
+  1, "Joseph V. Casillas", "PI", "joseph.casillas@rutgers.edu", "https://www.jvcasillas.com", "jvc2022.png",
+  0, "Laura Fernández Arroyo", "PhD student", "lf402@spanport.rutgers.edu", "https://www.laurafdeza.com/", "lfa.png",
+  0, "Juan José Garrido Pozú", "Professor", "jjg280@scarletmail.rutgers.edu", "https://juanjgarridop.github.io", "jjgp.png",
+  0, "Kyle Parrish", "Post-doc", "kcp74@scarletmail.rutgers.edu", "https://kparrish92.github.io", "kp.png", 
+  1, "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", "https://constantindureci.wixsite.com/profile", "gcd.png", 
+  1, "Jiawei Shao", "PhD student", "js2845@scarletmail.rutgers.edu", " ", "jis.png", 
+  1, "Iván Andreu Rascón", "PhD student", "ia308@connect.rutgers.edu", " ", "ira.png", 
+  0, "Isabelle Chang", "Research assistant", "isc22@scarletmail.rutgers.edu", " ", "schwa.png", 
+  0, "Katherine Taveras", "Research assistant", "kgtaveras@gmail.com", " ", "kat.png", 
+  0, "Avery Field", "Research assistant", "", " ", "schwa.png", 
+  0, "Jack Fastenau", "Research assistant", "", " ", "schwa.png", 
+  0, "Kimberly Gómez", "Research assistant", "", " ", "schwa.png", 
+  1, "John Thatcher", "Research assistant", "jet189@scarletmail.rutgers.edu", " ", "jt.png", 
+  1, "Stephanie Rodríguez", "PhD student", "stephanie.rodrig@rutgers.edu", " ", "sr.png", 
+  1, "Alexandria Minetti", "Research assistant", "amm850@scarletmail.rutgers.edu", " ", "am.png", 
+  1, "Rhode-Taina Gardere", "Research assistant", "rgg62@scarletmail.rutgers.edu", " ", "rtg.png", 
+  1, "Adrija Gadamsetty", "Research assistant", "ag1907@scarletmail.rutgers.edu", " ", "ag.png", 
+  1, "Krishita Laungani", "Research assistant", "krl105@scarletmail.rutgers.edu", " ", "kl.png"
+  ) |> 
+  arrange(Role, Name)
+
+current <- filter(members, current == 1)
 
 cat('<div class="row">\n <div class="column">')
 glue(
@@ -40,10 +52,10 @@ glue(
 <div class="content">
  <div class="zoom">
  <center>
- <a href="{members$Website}">
- <img src="./images/members/{members$img}" alt="member" style="width:30%">
+ <a href="{current$Website}">
+ <img src="./images/members/{current$img}" alt="member" style="width:30%">
  </a>\n
- <small_text>[{members$Name}](mailto:{members$Email}), {members$Role}</small_text>\n
+ <small_text>[{current$Name}](mailto:{current$Email}), {current$Role}</small_text>\n
  </center>
  </div>
 </div>
@@ -59,14 +71,23 @@ cat(' </div>\n</div>')
 
 ## Former members
 
-- Avery Field (Aresty, Montclair State)
-- Jack Fastenau (Lab assistant, New Jersey Medical School)
-- Kimberly Gómez (Aresty lab assistant)
+```{r}
+#| results: 'asis'
+#| echo: false
+
+members |> 
+  filter(current == 0) |> 
+  transmute(out = glue("- {Name} ({Role})")) |> 
+  pull()
+
+```
+
 
 ## Collaborators
 
-- Dr. Miquel Simonet (University of Arizona)
+- Dr. Miquel Simonet (Associate Professor, University of Arizona)
 - Dr. Nicole Rodríguez (Post-doc, Adam Mickiewicz University, Poznań, Poland)
+- Dr. Juan José Garrido Pozú (Assistant Professor, Furman University)
 
 
 
@@ -74,9 +95,13 @@ cat(' </div>\n</div>')
 ## Directory
 
 ```{r, members, echo=F, layout="l-body-outset"}
-members %>% 
-  select(-img) %>% 
-  knitr::kable()
+members |>
+  select(-img, -current) |>
+  arrange(Name) |>
+  knitr::kable() |> 
+  kableExtra::kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive")
+  )
 ```
 
 
