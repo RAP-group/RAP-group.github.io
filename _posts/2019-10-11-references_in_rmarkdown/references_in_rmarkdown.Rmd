@@ -71,7 +71,7 @@ see LaTeX/bibtex syntax:
 ```
 
 The advantage of using a `.bib` file for citing references is that all we have 
-to do is supple the important information, i.e., author, year, etc., and 
+to do is supply the important information, i.e., author, year, etc., and 
 Rmarkdown will tell `pandoc-citeproc` how to format them. 
 In our case we will use the default, but you can use any format you want 
 (even custom formats). 
@@ -105,7 +105,7 @@ We can use standard markdown syntax for this (see here for more details).
 For example, we can cite the Flege article as a parenthetical reference 
 using `[@flege1995]`: 
 
-The Speech Learning Model (Flege, 1995)[@flege1995] is pretty cool.
+The Speech Learning Model [@flege1995] is pretty cool.
 
 To render the above citation I typed this: 
 
@@ -118,7 +118,7 @@ Note that the formatting of this blog uses numbered citations (see the
 Now I can also use in-text citations by typing `@kuhl1992` (without the 
 brackets): 
 
-Kuhl (1992)@kuhl1992 has a great TED talk. 
+@kuhl1992 has a great TED talk. 
 
 ```
 @kuhl1992 has a great TED talk. 
