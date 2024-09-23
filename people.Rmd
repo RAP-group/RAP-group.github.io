@@ -27,7 +27,7 @@ members <- tribble(
   0, "Laura Fernández Arroyo", "PhD student", "lf402@spanport.rutgers.edu", "https://www.laurafdeza.com/", "lfa.png",
   0, "Juan José Garrido Pozú", "Professor", "jjg280@scarletmail.rutgers.edu", "https://juanjgarridop.github.io", "jjgp.png",
   0, "Kyle Parrish", "Post-doc", "kcp74@scarletmail.rutgers.edu", "https://kparrish92.github.io", "kp.png", 
-  1, "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", "https://constantindureci.wixsite.com/profile", "gcd.png", 
+  0, "Gabriela Constantin-Dureci", "PhD student", "gabriela.constantin.dureci@rutgers.edu", "https://constantindureci.wixsite.com/profile", "gcd.png", 
   1, "Jiawei Shao", "PhD student", "js2845@scarletmail.rutgers.edu", " ", "jis.png", 
   1, "Iván Andreu Rascón", "PhD student", "ia308@connect.rutgers.edu", " ", "ira.png", 
   0, "Isabelle Chang", "Research assistant", "isc22@scarletmail.rutgers.edu", " ", "schwa.png", 
@@ -35,12 +35,13 @@ members <- tribble(
   0, "Avery Field", "Research assistant", "", " ", "schwa.png", 
   0, "Jack Fastenau", "Research assistant", "", " ", "schwa.png", 
   0, "Kimberly Gómez", "Research assistant", "", " ", "schwa.png", 
-  1, "John Thatcher", "Research assistant", "jet189@scarletmail.rutgers.edu", " ", "jt.png", 
+  0, "John Thatcher", "Research assistant", "jet189@scarletmail.rutgers.edu", " ", "jt.png", 
   1, "Stephanie Rodríguez", "PhD student", "stephanie.rodrig@rutgers.edu", " ", "sr.png", 
-  1, "Alexandria Minetti", "Research assistant", "amm850@scarletmail.rutgers.edu", " ", "am.png", 
+  0, "Alexandria Minetti", "Research assistant", "amm850@scarletmail.rutgers.edu", " ", "am.png", 
   1, "Rhode-Taina Gardere", "Research assistant", "rgg62@scarletmail.rutgers.edu", " ", "rtg.png", 
-  1, "Adrija Gadamsetty", "Research assistant", "ag1907@scarletmail.rutgers.edu", " ", "ag.png", 
-  1, "Krishita Laungani", "Research assistant", "krl105@scarletmail.rutgers.edu", " ", "kl.png"
+  0, "Adrija Gadamsetty", "Research assistant", "ag1907@scarletmail.rutgers.edu", " ", "ag.png", 
+  1, "Krishita Laungani", "Research assistant", "krl105@scarletmail.rutgers.edu", " ", "kl.png", 
+  1, "Meritxell Feliu Ribas", "PhD student", "mfeliuribas@spanport.rutgers.edu", " ", "mr.png"
   ) |> 
   arrange(Role, Name)
 
@@ -88,7 +89,7 @@ members |>
 - Dr. Miquel Simonet (Associate Professor, University of Arizona)
 - Dr. Nicole Rodríguez (Post-doc, Adam Mickiewicz University, Poznań, Poland)
 - Dr. Juan José Garrido Pozú (Assistant Professor, Furman University)
-
+- Dr. Kyle Parrish (Post-doc, Goethe University Frankfurt, Germany)
 
 
 
