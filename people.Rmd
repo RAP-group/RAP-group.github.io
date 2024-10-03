@@ -41,7 +41,7 @@ members <- tribble(
   1, "Rhode-Taina Gardere", "Research assistant", "rgg62@scarletmail.rutgers.edu", " ", "rtg.png", 
   0, "Adrija Gadamsetty", "Research assistant", "ag1907@scarletmail.rutgers.edu", " ", "ag.png", 
   1, "Krishita Laungani", "Research assistant", "krl105@scarletmail.rutgers.edu", " ", "kl.png", 
-  1, "Meritxell Feliu Ribas", "PhD student", "mfeliuribas@spanport.rutgers.edu", " ", "mr.png"
+  1, "Meritxell Feliu Ribas", "PhD student", "mfeliuribas@spanport.rutgers.edu", "https://www.mfeliuribas.com", "mr.png"
   ) |> 
   arrange(Role, Name)
 
